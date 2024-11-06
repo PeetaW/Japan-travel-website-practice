@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本旅遊推薦</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./Style/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <img class="fixed-img" src="./images/富士山2.jpg" alt="富士山背景圖片">
+  <header>
+    <section class="logo">
+      <img src="./images/網站Logo.svg" alt="旅遊網站Logo">
+      <h1>2024日本旅遊推薦</h1>
+    </section>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-plane"></i> 日本旅遊</a></li>
+        <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
+        <li><a href="#"><i class="fa-solid fa-book"></i> 預約行程</a></li>
+        <li><a href="#"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="background-img">
+      <div class="filter"></div>
+      <h3>休閒時光，特別約定
+        <br>
+        安排一趟日本導遊行程，一起放鬆身心探索世界
+      </h3>
+    </section>
+  </main>
+  <section class="info-circles">
+    <h3>遊玩主題</h3>
+    <div class="circles">
+      <div class="circle">
+        <img src="./images/北海道雪景.jpg" alt="北海道雪景">
+        <p>北海道雪景，美不勝收</p>
+      </div>
+      <div class="circle">
+        <img src="./images/日本壽司.jpg" alt="日本壽司">
+        <p>日本道地壽司與美景</p>
+      </div>
+      <div class="circle">
+        <img src="./images/富士山.jpg" alt="富士山">
+        <p>富士山風景與溫泉</p>
+      </div>
+      <div class="circle">
+        <img src="./images/清水寺.jpg" alt="京都古城">
+        <p>京都清水寺，千年古都</p>
+      </div>
+    </div>
+  </section>
+  <section class="empty-container">
+    <h3>今天就開始規劃行程，隨時準備出去玩</h3>
+  </section>
+  <section class="google-map">
+    <h3>日本地理位置</h3>
+    <p>日本是個四面環海的島國，由於氣候受季候風影響，因此四季變化明顯。6、7月份降水量較多，被稱為「梅雨」期；夏秋之間則易受颱風影響。另外，日本國土位置與中國基本處於同一緯度，故氣候與氣溫的變化基本與中國相同。提提你：北海道地區全年平均氣溫偏低，冬季氣候嚴寒；本州以南地區則氣溫較高，夏季炎熱。留學生應按照所前往的地區之氣候特點而準備不同的衣物。</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d332160.4655774134!2d135.4115161287421!3d35.0922111552248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z5pel5pys5Lqs6YO95bqc5Lqs6YO95biC!5e1!3m2!1szh-TW!2stw!4v1725987594796!5m2!1szh-TW!2stw" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <section class="logo-footer">
+      <img src="./images/網站Logo.svg" alt="網站logo">
+      <h3>2024日本旅遊行程，等你出發</h3>
+    </section>
+    <section class="links">
+      <a href="#">
+        <img src="./Icons/facebook.svg" alt="facebook">
+      </a>
+      <a href="#">
+        <img src="./Icons/instagram.svg" alt="instagram">
+      </a>
+      <a href="#">
+        <img src="./Icons/twitter.svg" alt="twitter">
+      </a>
+      <a href="#">
+        <img src="./Icons/youtube.svg" alt="youtube">
+      </a>
+    </section>
+  </footer>
+
+  <script>
+    // setInterval (() => {
+    //   if (
+    //     $("section.background-img").css("background-image") === 'url("../images/sakura.jpg")'
+    //   ) {
+    //     // 
+    //     console.log("true");
+    //   } else if (
+    //     $("section.background-img").css("background-image") === 'url("./images/kyoto-castle.jpg")'
+    //   ) {
+    //     $("section.background-img").css("background-image","url('./images/osaka-street.jpg')");
+    //   } else {
+    //     // $("section.background-img").css("background-image", "url('./images/sakura.jpg')");
+    //     console.log("false");
+    //   }
+    // },3000);
+
+    setInterval(() => {
+      const backgroundImg = $("section.background-img").css("background-image");
+
+      if (backgroundImg.includes("sakura.jpg")) {
+        $("section.background-img").css("background-image","url('./images/kyoto-castle.jpg')");
+      } else if (backgroundImg.includes("kyoto-castle.jpg")) {
+        $("section.background-img").css("background-image", "url('./images/osaka-street.jpg')");
+      } else {
+        $("section.background-img").css("background-image","url('./images/sakura.jpg')");
+      }
+    }, 3000);
+
+    //http://localhost:8080/images/%E6%97%A5%E6%9C%AC%E6%AB%BB%E8%8A%B1.jpg  日本櫻花照片
+    //http://localhost:8080/images/%E4%BA%AC%E9%83%BD%E5%8F%A4%E5%9F%8E.jpg  京都古城
+    //http://localhost:8080/images/%E5%A4%A7%E9%98%AA%E8%A1%97%E9%A0%AD.jpg  大阪街頭
+    // setInterval (() => {
+    //   if (
+    //     $("section.background-img").css("background-image") === 'url("./images/日本櫻花.jpg")'
+    //   ) {
+    //     $("section.background-img").css("background-image","url('./images/京都古城.jpg')");
+    //   } else if (
+    //     $("section.background-img").css("background-image") === 'url("./images/京都古城.jpg")'
+    //   ) {
+    //     $("section.background-img").css("background-image","url('./images/大阪街頭.jpg')");
+    //   } else {
+    //     $("section.background-img").css("background-image", "url('./images/日本櫻花.jpg')");
+    //   }
+    // },3000);
+  </script>
+
+</body>
+</html>

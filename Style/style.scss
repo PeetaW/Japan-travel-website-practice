@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: solid 1px black;
+  h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+  }
+}
+
+img.fixed-img{
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+
+header{
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 5px 10px -8px #303435;
+}
+
+section.logo{
+  display: flex;
+  flex: 2 1 400px;
+  align-items: center;
+
+  img{
+    width: 6vw;
+    height: 6vw;
+  }
+  h1{
+    font-size: 2.2rem;
+    display: block;
+  }
+}
+
+nav{
+  flex: 5 1 500px;
+  ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    li{
+      a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.35rem;
+        transition: all 0.2s ease;
+        padding-bottom: 0.3rem;
+        cursor: pointer;
+        &:hover{
+          color: rgba(152, 57, 255, 0.5);
+          border-bottom: solid 3px rgba(152, 57, 255, 0.5);
+
+        }
+      }
+    }
+  }
+}
+
+section.background-img{
+  //設定背景圖片
+  background-image: url("../images/sakura.jpg");
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in;
+
+  //設定圖片背景遮罩
+  div.filter{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+  }
+  h3{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+section.info-circles{
+  background-color: #fff;
+  padding: 2rem 1rem;
+
+  //標題設定
+  h3{
+    font-size: 2rem;
+    text-align: center;
+  }
+  //圓形圖片img設定
+  div.circles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div.circle{
+     flex: 0 1 250px;
+     padding: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     img{
+      width: 80%;
+      border-radius: 50%;
+      transition: all 0.1s ease-in;
+      padding: 0.3rem;
+      &:hover{
+        border: solid 3px rgba(152, 57, 255, 0.5);
+      }
+     }
+    }
+  }
+}
+
+//空白格背景設定
+section.empty-container{
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3{
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+
+//google map區塊設定
+section.google-map{
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+
+  h3{
+    font-size: 2.5rem;
+  }
+
+  p{
+    font-size: 1.25rem;
+    margin: 1rem;
+  }
+  iframe{
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+footer{
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  section.logo-footer{
+    display: flex;
+    align-items: center;
+    img{
+      width: 25vw;
+      
+    }
+    h3{
+      font-size: 2.5rem;
+    }
+  }
+
+  section.links{
+    margin-top: 2rem;
+    img{
+      width: 5vh;
+      margin: 0rem 1rem;
+    }
+  }
+}
